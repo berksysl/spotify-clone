@@ -118,11 +118,10 @@ section {
 
 /* Mobile Navigation Screen */
 .mobile-nav {
-    display: flex;
+    display: none;
     background-color: transparent;
     height: 100vh;
     position: relative;
-    right: -100%;
     top: -15px;
     transition: all .4s ease-in-out;
     flex-direction: column;
@@ -147,11 +146,23 @@ section {
 }
 
 /* animation */
+@keyframes slide {
+    from {right: -100%;}
+    to {right: 0;}
+}
 .mobile-nav.open {
-    right: 0;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    animation-name: slide;
+    animation-duration: .3s;
     background-color: black;
 }
-
+.mobile-nav .logo {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
 /* Media Quaries */
 
 /* Spacing */
