@@ -152,8 +152,6 @@ section {
 }
 .mobile-nav.open {
     display: flex;
-    overflow-x: hidden;
-    overflow-y: scroll;
     animation-name: slide;
     animation-duration: .3s;
     background-color: black;
