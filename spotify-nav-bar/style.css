@@ -102,19 +102,31 @@ section {
 }
 
 .hamburger-lines.open {
-    transform: translateX(-50px);
+    transform: translateX(0px);
     background-color: transparent;
 }
 
 .hamburger-lines.open::after {
-    transform: rotate(45deg) translate(35px, -35px);
+    transform: rotate(45deg);
 }
 .hamburger-lines.open::before {
-    transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(-45deg);
 }
 
-.open .content-wrap {
-    flex-direction: column;
+/* Mobile Navigation Screen */
+.mobile-nav {
+    display: flex;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    right: -100%;
+    top: 0;
+    transition: all .4s ease-in-out;
+}
+
+.mobile-nav.open {
+    right: 0;
+    
 }
 
 /* Media Quaries */
@@ -135,5 +147,3 @@ section {
         display: block;
     }
 }
-
-/* 

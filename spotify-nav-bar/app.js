@@ -1,12 +1,6 @@
 const navSection = document.querySelector('.hamburger-lines');
-let menuOpen = false;
+const mobileNav = document.querySelector('.mobile-nav');
 navSection.addEventListener('click', () => {
-    if(!menuOpen){
-        navSection.classList.add('open');
-        menuOpen = true;
-    }
-    else {
-        navSection.classList.remove('open');
-        menuOpen = false;
-    }
+    navSection.classList.toggle("open");
+    mobileNav.classList.toggle("open");
 });
