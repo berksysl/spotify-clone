@@ -150,16 +150,12 @@ section {
     from {right: -100%;}
     to {right: 0;}
 }
-.mobile-nav.open {
-    display: flex;
-    animation-name: slide;
-    animation-duration: .3s;
-    background-color: black;
-}
+
 .mobile-nav .logo {
     position: absolute;
     bottom: 50px;
     left: 30px;
+    justify-content: start;
 }
 /* Media Quaries */
 
@@ -182,5 +178,11 @@ section {
     .hamburger-box {
         display: block;
         right: 30px;
+    }
+    .mobile-nav.open {
+        display: flex;
+        animation-name: slide;
+        animation-duration: .3s;
+        background-color: black;
     }
 }
