@@ -28,7 +28,7 @@ li {
 /* Background */
 section {
     background-color: black;
-    min-height: 55px;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,11 +50,12 @@ section {
 }
 
 .logo img {
-    width: 2rem;
+    width: 3rem;
+    margin-right: 5px;
 }
 
 .logo span {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* Navigation Links */
@@ -168,9 +169,19 @@ section {
 
 /* Hamburger Icon */
 @media screen and (max-width: 990px) {
+    section {
+        min-height: 55px;
+    }
     .content-wrap {
         width: 100%;
         padding: 0 10px;
+    }
+    .logo img {
+        width: 2rem;
+        margin-right: 0;
+    }
+    .logo span {
+        font-size: 20px;
     }
     .nav-section {
         display: none;
@@ -186,3 +197,49 @@ section {
         background-color: black;
     }
 }
+
+/* Header Section */
+header {
+    background-color: #1D75DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-size: 30px;
+}
+header .content-wrap {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+header p {
+    margin-top: 0;
+}
+
+header .buttons button{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 70px;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+header .buttons button:nth-child(1) {
+    background-color: #0B0909;
+    border: 1px solid black;
+}
+
+header .buttons button:nth-child(2) {
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+header .buttons button:hover{
+    width: 10rem;
+    height: 3rem;
+}
+
