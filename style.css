@@ -360,8 +360,6 @@ header span a {
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0px 0px 5px 3px rgba(0,0,0, 0.1);
-    display: flex;
-    flex-direction: column;
 }
 .section02 .outlist li .sec1 {
     height: 200px;
@@ -369,10 +367,6 @@ header span a {
 
 .section02 .outlist li .sec2 {
     height: 250px;
-}
-
-.section02 .outlist li .sec3 {
-    height: 100%;
 }
 
 .section02 .s1 {
@@ -427,6 +421,7 @@ header span a {
     font-size: .8rem;
     font-family: 'Itim', cursive;
     letter-spacing: 1.5px;
+    cursor: pointer;
 }
 
 .section02 .btn1:hover {
@@ -452,3 +447,93 @@ header span a {
     padding: 4px 16px 16px;
 }
 
+.section02 .sec3 {
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* LAST SECTION */
+footer {
+    padding: 80px 0 50px;
+    background-color: black;
+    font-size: 16px;
+}
+
+footer nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
+}
+
+footer .logo-section {
+    min-height: 346px;
+    padding: 0 15px;
+    font-size: 24px;
+    width: 15%;
+}
+
+footer .logo-section img {
+    width: 50px;
+    position: relative;
+    top: 18px;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+footer .links .list {
+    line-height: 1.7rem;
+}
+
+footer .links .list dt {
+    font-weight: bold;
+}
+
+footer .social-links {
+    width: 15%;
+    flex-wrap: wrap;
+}
+footer .social-links ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .social-links ul li:nth-child(1){
+    margin-right: 10px;
+}
+footer .social-links ul li:nth-child(2){
+    margin-right: 10px;
+}
+
+footer .social-links ul li img {
+    width: 50px;
+}
+
+footer .country {
+    width:100%;
+    text-align: end;
+}
+
+footer .country img {
+    width:10px;
+}
+
+footer .bottom-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: lighter;
+}
+
+footer .bottom-links ul {
+    display: flex;
+    gap:30px;
+}
