@@ -1,2 +1,2 @@
-# Spotify Responsive Navigation Bar
+# Spotify Clone
 
