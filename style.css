@@ -174,7 +174,7 @@ section {
         min-height: 55px;
     }
     .content-wrap {
-        width: 100%;
+        width: 90%;
         padding: 0 10px;
     }
     .logo img {
@@ -196,6 +196,13 @@ section {
         animation-name: slide;
         animation-duration: .3s;
         background-color: black;
+    }
+    .section02 h2 {
+        text-align: center;
+    }
+    .section02 .content-wrap > p {
+        margin-top: 30px !important;
+        text-align: center;
     }
     .body.open {
         overflow-y: hidden;
@@ -366,7 +373,13 @@ header span a {
         max-width: 50% !important;
     }
     .section02 .outlist .sec1 {
-        height: 160px !important;
+        height: 180px !important;
+    }
+    .section02 .outlist .sec2 {
+        font-size: 18px;
+    }
+    .section02 .outlist .sec3 {
+        justify-content: space-around;
     }
     .section02 .outlist .sec3 .btn1 {
         margin-top: 39px !important;
@@ -498,6 +511,7 @@ footer nav {
     footer nav {
         flex-direction: column;
         align-items: flex-start !important;
+        margin: 0;
     }
 
     footer {
