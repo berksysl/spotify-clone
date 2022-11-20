@@ -1,7 +1,7 @@
 # Spotify Clone
 
 #Overview
-link : https://berksysl.github.io/spotify-responsive-navbar/
+link : https://berksysl.github.io/spotify-clone/
 
 ![image](https://user-images.githubusercontent.com/54808716/201995008-430781cf-c665-4d1c-8681-fc73beb88458.png)
 
